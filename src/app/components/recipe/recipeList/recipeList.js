@@ -4,8 +4,8 @@ import RecipeCard from "../recipeCard/recipeCard"
 const RecipeList = ({ recipes }) => {
     return (
         <ul className={recipeListCss.list}>
-            {recipes.map((recipe, index) => (
-                <li key={index} className={recipeListCss.item}>
+            {recipes.map((recipe) => (
+                <li key={recipe.name} className={recipeListCss.item}>
                     <RecipeCard recipe={recipe} />
                 </li>
             ))}
