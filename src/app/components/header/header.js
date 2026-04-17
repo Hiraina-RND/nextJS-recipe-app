@@ -1,6 +1,6 @@
 import headerCss from "./header.module.css"
 
-const Header = () => {
+const Header = ({ handleToggleOrder }) => {
     return (
             <header className={headerCss.header}>
                 <div className={headerCss.headerRow}>
@@ -8,7 +8,7 @@ const Header = () => {
                     <button
                         type="button"
                         className={headerCss.headerToggleBtn}
-                        // onClick={handleToggleOrder}
+                        onClick={handleToggleOrder}
                     >
                         Reverse order
                     </button>
