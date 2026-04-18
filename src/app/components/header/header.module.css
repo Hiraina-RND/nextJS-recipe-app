@@ -34,3 +34,27 @@
 .toggle:hover {
   background: #f6f4f1;
 }
+
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchInput {
+  border: 1px solid #c9c2b6;;
+  border-radius: 8px;
+  padding-block: 0.45rem;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+
+.searchInput::placeholder {
+  color: #c9c2b6;
+}
+
+.searchIcon {
+  position: relative;
+  left: -90%;
+}
